@@ -9,13 +9,13 @@ This API should work in direct parody with [Asset Extractor 2](https://github.co
 Start the container with something like this:
 
 ```
-docker pull ghcr.io/lego-fan9/swgoh-assetapi:latest
+docker pull ghcr.io/cobbfan9/swgoh-assetapi:latest
 docker run --name AssetAPI \
     -d \
     --restart always \
     -p 3300:3300 \
     --env COMLINK_URL=http://localhost:3200
-    ghcr.io/lego-fan9/swgoh-assetapi:latest
+    ghcr.io/cobbfan9/swgoh-assetapi:latest
 ```
 
 The --env flag is optional, and should point to a comlink instance if used. For more info on that see [AssetVersion](#assetversion)
@@ -24,7 +24,7 @@ The --env flag is optional, and should point to a comlink instance if used. For 
 
 This tool uses FastAPI with uvicorn so you can do
 ```
-git clone https://github.com/lego-fan9/swgoh-assetapi
+git clone https://github.com/cobbfan9/swgoh-assetapi
 cd swgoh-assetapi
 pip install -r reqs.txt
 python assetapi.py
